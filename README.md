@@ -39,6 +39,7 @@ Cotenidos
 `Veronica` posee una lista de dependencias que no se encuentran disponibles en el repositorio remoto de Maven por lo que se tendrá que hacer la instalación de forma manual. Para esto, ejecutar los comandos listados a continuación.
 ```bash
 cd /veronica-open-api/additional_libs
+mvn install:install-file -Dfile=jasperreports-6.4.0.jar -DgroupId=net.sf.jasperreports -DartifactId=jasperreports -Dversion=6.4.0 -Dpackaging=jar
 mvn install:install-file -Dfile=jss-4.2.5.jar -DgroupId=org.mozilla -DartifactId=jss -Dversion=4.2.5 -Dpackaging=jar
 mvn install:install-file -Dfile=MITyCLibAPI-1.0.4.jar -DgroupId=es.mityc.javasign -DartifactId=api -Dversion=1.0.4 -Dpackaging=jar
 mvn install:install-file -Dfile=MITyCLibCert-1.0.4.jar -DgroupId=es.mityc.javasign -DartifactId=cert -Dversion=1.0.4 -Dpackaging=jar
